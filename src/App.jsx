@@ -11,7 +11,6 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      
       <Outlet />
     </div>
   );

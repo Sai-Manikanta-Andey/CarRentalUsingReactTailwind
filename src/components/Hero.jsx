@@ -6,7 +6,9 @@ import bugattiengine from "../assets/bugattiengine.webp";
 
 const Hero = () => {
   return (
+    // hero container
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0  mx-auto mb-16  p-4  max-w-[1100px] sm:mb-20">
+      {/* hero left  */}
       <div className="flex flex-col justify-center  text-center lg:text-left">
         <h2 className="text-lg font-semibold text-gray-500  ">Drive a Beast</h2>
         <h2 className="font-extrabold   text-5xl md:text-7xl uppercase  ">
@@ -55,6 +57,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
+      {/* hero right  */}
       <div className=" flex w-full h-[350px] sm:h-[600px] object-contain bg-gradient-to-t from-blue-500 via-blue-400 to-blue-500 rounded-tl-md ">
         <img
           src={hero}

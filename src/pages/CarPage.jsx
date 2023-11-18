@@ -4,7 +4,7 @@ import Data from '../utils/Data'
 
 const CarPage = () => {
   const {id} =useParams()
-  console.log(Data);
+
   const {image,title,rent} = Data.find((EachCar)=> EachCar.id === +id )
   
   return (

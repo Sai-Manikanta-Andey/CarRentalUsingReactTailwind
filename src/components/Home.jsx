@@ -4,11 +4,13 @@ import Contact from './Contact'
 import Footer from './Footer'
 import Body from './Body'
 import Hero from './Hero'
+import Companies from './Companies'
 
 const Home = () => {
   return (
-    <div className='py-20'>
+    <div className=' py-20'>
       <Hero/>
+      <Companies/>
       <Body/>
       <About/>
       <Contact/>

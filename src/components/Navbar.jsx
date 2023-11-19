@@ -75,6 +75,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+      {/* Hamburger icon */}
       <div className="sm:hidden" onClick={handleNav}>
         <BiMenuAltRight size={25} />
       </div>

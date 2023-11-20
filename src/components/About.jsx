@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="flex flex-col  gap-4 md:flex-row   p-4 max-w-[1100px] mx-auto mb-20">
       {/* right side image div */}
-      <div className="flex h-[260px] w-full   ">
+      <div className="flex w-full ">
         <img
           src={ferrariRed}
           alt="banner"

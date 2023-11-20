@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const About = () => {
   return (
-    <div className="flex flex-col  gap-4 md:flex-row   p-4 max-w-[1100px] mx-auto">
+    <div className="flex flex-col  gap-4 md:flex-row   p-4 max-w-[1100px] mx-auto mb-20">
       {/* right side image div */}
       <div className="flex h-[260px] w-full   ">
         <img
@@ -22,7 +22,6 @@ const About = () => {
           Carvala is a premium car rental platform that offers more than just
           luxury vehicles. seamless online rentals, 24/7 support, and additional
           services like professional car washing and reliable car repairs.
-          
         </h3>
         <div className="flex flex-wrap justify-around gap-4 font-semibold sm:text-lg md:justify-start sm:flex-nowrap">
           <div>

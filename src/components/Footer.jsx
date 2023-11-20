@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <hr className="mt-8 max-w-[1100px] shadow-lg mx-auto" />
-      <div className=" w-full max-w-[1100px] m-auto p-4  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 ">
+      <div className=" w-full max-w-[1100px] m-auto p-4  flex flex-col sm:flex-row flex-wrap  gap-2  sm:justify-between ">
         <div className="justify-self-center">
           <h3 className="text-xl font-semibold">CARVALA</h3>
           <h4 className="text-base font-medium">Perupalem</h4>

@@ -6,12 +6,14 @@ import Home from "./components/Home.jsx";
 import Bookings from "./pages/Bookings.jsx";
 import CarPage from "./pages/CarPage.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Outlet />
+      <Footer />
     </div>
   );
 };

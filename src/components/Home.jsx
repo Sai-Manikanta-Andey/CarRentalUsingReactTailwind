@@ -8,15 +8,15 @@ import Companies from './Companies'
 
 const Home = () => {
   return (
-    <div className='pt-20 '>
-      <Hero/>
-      <Companies/>
-      <Body/>
-      <About/>
-      <Contact/>
-      <Footer/>
+    <div className="pt-20 ">
+      <Hero />
+      <Companies />
+      <Body />
+      <About />
+      <Contact />
+      
     </div>
-  )
+  );
 }
 
 export default Home

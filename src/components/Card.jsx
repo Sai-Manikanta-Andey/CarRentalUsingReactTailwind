@@ -23,7 +23,7 @@ const Card = ({ data }) => {
             <h3 className="flex items-center justify-center">
               {data.rating}
 
-              <FaStar size={15} className="text-yellow-400" />
+              <FaStar size={15} className="text-yellow-400 mb-0.5" />
             </h3>
           </div>
         </div>

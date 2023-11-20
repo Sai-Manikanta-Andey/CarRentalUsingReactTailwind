@@ -5,7 +5,7 @@ import appstore from "../assets/appstore.svg";
 
 const Contact = () => {
   return (
-    <div className="p-4 max-w-[1100px] mx-auto flex flex-col-reverse sm:flex-row gap-8">
+    <div className="p-4 max-w-[1100px] mx-auto flex flex-col-reverse sm:flex-row gap-8 mb-20">
       {/* left div */}
       <div className="w-full sm:w-[60%]">
         <div className="flex flex-col justify-center h-full">
@@ -29,7 +29,7 @@ const Contact = () => {
         <img
           src={phn}
           alt="iphoneimg"
-          className="object-contain h-[320px] w-full"
+          className="object-contain h-[340px] w-full"
         />
       </div>
     </div>

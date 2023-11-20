@@ -8,7 +8,7 @@ import Companies from './Companies'
 
 const Home = () => {
   return (
-    <div className=' py-20'>
+    <div className='pt-20 '>
       <Hero/>
       <Companies/>
       <Body/>

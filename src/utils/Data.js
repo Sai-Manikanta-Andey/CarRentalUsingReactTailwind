@@ -3,7 +3,7 @@ import {
   astonMartinVirageGoldCar,
   audi,
   audi2,
-  bannerImage,
+  koenigsegg,
   blueJaguar,
   brownMercedesBenz,
   bugattiChiron,

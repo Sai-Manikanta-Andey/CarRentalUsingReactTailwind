@@ -1,5 +1,5 @@
 import React from "react";
-import koenigsegg from "../assets/koenigseggAgera.png";
+import {koenigsegg} from './Index'
 import CountUp from "react-countup";
 
 const About = () => {

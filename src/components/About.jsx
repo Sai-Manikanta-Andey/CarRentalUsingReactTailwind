@@ -1,5 +1,5 @@
 import React from "react";
-import koenigsegg from "../assets/koenigseggAgera.webp";
+import koenigsegg from "../assets/koenigseggAgera.png";
 import CountUp from "react-countup";
 
 const About = () => {

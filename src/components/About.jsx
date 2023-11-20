@@ -4,17 +4,17 @@ import CountUp from "react-countup";
 
 const About = () => {
   return (
-    <div className="flex flex-col  gap-4 md:flex-row   p-4 max-w-[1100px] mx-auto mb-20">
+    <div className="flex flex-col  gap-4 lg:flex-row   p-4 max-w-[1100px] mx-auto mb-20">
       {/* right side image div */}
-      <div className="flex w-full ">
+      <div className="flex w-full mx-auto sm:h-[300px] h-[200px]">
         <img
           src={ferrariRed}
           alt="banner"
-          className="w-full md:w-[360px] rounded  object-cover "
+          className="object-contain "
         />
       </div>
       {/* description about carvala */}
-      <div className="flex flex-col gap-2 ">
+      <div className="flex flex-col justify-center gap-2 ">
         <h3 className="text-xl font-bold text-blue-500 sm:text-2xl">
           Our Premium Services
         </h3>

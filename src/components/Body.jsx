@@ -5,7 +5,7 @@ import Card from "./Card";
 
 const Body = () => {
   return (
-    <div className="max-w-[1100px] mx-auto mb-20 p-4">
+    <div className="max-w-[1100px] mx-auto mb-12 p-4">
       {/* title */}
       <div className="mb-8">
         <h4 className="text-lg font-bold text-blue-500">Your Choice</h4>

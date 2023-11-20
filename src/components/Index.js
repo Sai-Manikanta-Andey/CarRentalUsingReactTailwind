@@ -10,7 +10,6 @@ export { default as bugattiChiron } from "../assets/bugatti-chiron.webp";
 export { default as ferrariRed } from "../assets/ferrari-red.webp";
 export { default as grayVolvo } from "../assets/gray-volvo.webp";
 export { default as hero } from "../assets/hero.webp";
-export { default as koenigsegg } from "../assets/koenigseggAgera.png";
 export { default as hyundai } from "../assets/hyundai.webp";
 export { default as hyundai2 } from "../assets/Hyundai2.webp";
 export { default as hyundaiSonata } from "../assets/hyundai-sonata.webp";

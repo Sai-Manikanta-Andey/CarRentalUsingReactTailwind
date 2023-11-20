@@ -1,5 +1,5 @@
 import React from "react";
-import {koenigsegg} from './Index'
+import { ferrariRed } from "./Index";
 import CountUp from "react-countup";
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
       {/* right side image div */}
       <div className="flex h-[260px] w-full   ">
         <img
-          src={koenigsegg}
+          src={ferrariRed}
           alt="banner"
           className="w-full md:w-[360px] rounded  object-cover "
         />

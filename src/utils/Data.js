@@ -3,7 +3,6 @@ import {
   astonMartinVirageGoldCar,
   audi,
   audi2,
-  koenigsegg,
   blueJaguar,
   brownMercedesBenz,
   bugattiChiron,
@@ -14,7 +13,6 @@ import {
   hyundai2,
   hyundaiSonata,
   lamborghiniAventador,
-  sideImage,
   thar,
   yellowFerrari,
 } from "../components/Index";

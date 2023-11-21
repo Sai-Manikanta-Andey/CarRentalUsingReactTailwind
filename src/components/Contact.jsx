@@ -3,9 +3,13 @@ import phn from "../assets/phn.webp";
 import playstore from "../assets/playstore.svg";
 import appstore from "../assets/appstore.svg";
 
+
 const Contact = () => {
   return (
-    <div className="p-4 max-w-[1100px] mx-auto flex flex-col-reverse sm:flex-row gap-8 mb-20">
+    <div
+      id="contact"
+      className="p-4 max-w-[1100px] mx-auto flex flex-col-reverse sm:flex-row gap-8 mb-20"
+    >
       {/* left div */}
       <div className="w-full sm:w-[60%]">
         <div className="flex flex-col justify-center h-full">
@@ -19,13 +23,21 @@ const Contact = () => {
             repairing, or sourcing genuine car parts, Carvala has you covered.
           </h4>
           <div className="flex justify-start gap-2 mt-4 sm:gap-4">
-            <img src={playstore} className="w-[130px] h-10 object-contain " alt="playstore " />
-            <img src={appstore} className="w-[130px] h-10 object-contain " alt="appstore" />
+            <img
+              src={playstore}
+              className="w-[130px] h-10 object-contain "
+              alt="playstore "
+            />
+            <img
+              src={appstore}
+              className="w-[130px] h-10 object-contain "
+              alt="appstore"
+            />
           </div>
         </div>
       </div>
       {/* right div */}
-      <div className="w-full sm:w-[50%] h-[300px]">
+      <div className="w-full sm:w-[50%] h-[340px] mt-4">
         <img
           src={phn}
           alt="iphoneimg"

@@ -5,7 +5,6 @@ import Hero from './Hero'
 import Companies from './Companies'
 import { lazy,Suspense } from "react";
 import Loading from './Loading'
-
 const Body = lazy(() => import("./Body"));
 
 const Home = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Data from "../utils/Data";
 import { FaStar } from "react-icons/fa";
@@ -7,24 +7,31 @@ import { PiEngineFill } from "react-icons/pi";
 import { PiSteeringWheelFill } from "react-icons/pi";
 
 const CarPage = () => {
+  
   const { id } = useParams();
 
   const { image, title, rent, members, engine, description, rating } =
     Data.find((EachCar) => EachCar.id === +id);
 
+  const handleClick=(e,id)=>{
+    setOpenModal(prev=> !prev)
+  }
+
   return (
-    <div className=" pt-28 max-w-[1100px] mx-auto px-4 mb-20 ">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div id="top" className=" pt-20 max-w-[1100px] mx-auto px-4 mb-20 flex items-center   ">
+      <div className="grid grid-cols-1 gap-4 p-0 md:grid-cols-2">
         {/* image side  */}
         <div>
           <img
             src={image}
             alt={title}
-            className="object-contain w-full h-full"
+            className="object-contain w-full h-full "
           />
         </div>
+        {/* modal  */}
+        
         {/* right side details */}
-        <div>
+        <div className="flex flex-col gap-3">
           <h2 className="text-2xl font-bold text-black">{title} </h2>
           <h3 className="text-xl font-medium ">
             Price : ₹{rent} <span className="text-base font-base">/Day</span>
@@ -51,7 +58,10 @@ const CarPage = () => {
             </h3>
           </div>
           <div>
-            <button className="w-full px-2 py-2 mt-2 text-base font-medium transition-all duration-700 bg-orange-400 rounded hover:shadow-2xl">
+            <button autoFocus="false"
+              onClick={(e) => handleClick(id)}
+              className="w-full px-2 py-2 mt-2 text-base font-medium transition-all duration-700 bg-orange-400 rounded hover:shadow-2xl"
+            >
               Book Now
             </button>
           </div>

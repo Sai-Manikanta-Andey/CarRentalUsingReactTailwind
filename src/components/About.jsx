@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const About = () => {
   return (
-    <div className="flex flex-col  gap-4 lg:flex-row   p-4 max-w-[1100px] mx-auto mb-20">
+    <div id="about" className="flex flex-col  gap-4 lg:flex-row   p-4 max-w-[1100px] mx-auto mb-20">
       {/* right side image div */}
       <div className="flex w-full mx-auto sm:h-[300px] h-[200px]">
         <img

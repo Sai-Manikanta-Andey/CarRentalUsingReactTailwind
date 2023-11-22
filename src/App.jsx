@@ -7,14 +7,18 @@ import Bookings from "./pages/Bookings.jsx";
 import CarPage from "./pages/CarPage.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import { Provider } from "react-redux";
+import store from './app/store.js'
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+    </Provider>
   );
 };
 

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoCloseSharp } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const bookings = useSelector((state) => state.Book);
   const [openNav, setOpenNav] = useState(false);
   const handleNav = () => {
     setOpenNav((prev) => !prev);
@@ -11,7 +13,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="fixed w-full left-0  top-0 bottom-0 flex justify-between p-4 h-16 bg-white lg:px-12 max-w-[1400px]   z-20 mx-auto  mb-4  ">
+      <div className="fixed w-full left-0  top-0 bottom-0 flex justify-between p-4 h-20 bg-white lg:px-12 max-w-[1400px]   z-20 mx-auto  mb-4  ">
         {/* LOGO */}
         <div>
           <h2 className="text-2xl font-extrabold text-blue-500"> CARAVALA</h2>
@@ -26,12 +28,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/bookings" className="text-base font-semibold">
+              <Link to="/bookings" className="relative text-base font-semibold">
+                <div className="absolute right-[-15px] opacity-80  bg-green-500 border-2  rounded-[50%] top-[-12px] px-2 text-sm">
+                  {bookings.length}
+                </div>
                 Bookings
               </Link>
             </li>
-            
-            
           </ul>
 
           {/* mobile nav */}
@@ -56,8 +59,6 @@ const Navbar = () => {
                 Bookings
               </Link>
             </li>
-            
-            
           </ul>
         </nav>
         {/* Hamburger icon */}

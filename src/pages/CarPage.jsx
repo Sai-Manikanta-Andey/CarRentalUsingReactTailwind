@@ -1,23 +1,51 @@
-import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Data from "../utils/Data";
 import { FaStar } from "react-icons/fa";
 import { MdAirlineSeatReclineExtra } from "react-icons/md";
 import { PiEngineFill } from "react-icons/pi";
 import { PiSteeringWheelFill } from "react-icons/pi";
+import { useDispatch } from "react-redux";
+import { booked } from "../feature/BookingSlice";
+import { useSelector } from "react-redux";
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const CarPage = () => {
+  const bookings = useSelector((state) => state.Book);
+  const dispatch = useDispatch();
   const { id } = useParams();
   const { image, title, rent, members, engine, description, rating } =
     Data.find((EachCar) => EachCar.id === +id);
-
-
+  const handleClick = (
+    id,
+    image,
+    title,
+    rent,
+    members,
+    engine,
+    description,
+    rating
+  ) => {
+   const CarAlreadyExist = bookings?.filter(car => car?.id === id)
+   console.log(CarAlreadyExist);
+   if(CarAlreadyExist.length !==0){
+    // notifies already booked
+   toast.error("Already Booked !")
+   }
+   else{
+    toast.success("Booked Successfully !");
+    dispatch(
+      booked({ id, image, title, rent, members, engine, description, rating })
+    );
+   }
+  };
 
   return (
     <div
       id="top"
       className=" pt-20 max-w-[1100px] mx-auto px-4 mb-20 flex items-center   "
     >
+      <Toaster position="top-center" reverseOrder={false} />
       <div className="grid grid-cols-1 gap-4 p-0 md:grid-cols-2">
         {/* image side  */}
         <div>
@@ -57,8 +85,18 @@ const CarPage = () => {
           </div>
           <div>
             <button
-              autoFocus="false"
-              onClick={(e) => handleClick(id)}
+              onClick={(e) =>
+                handleClick(
+                  id,
+                  image,
+                  title,
+                  rent,
+                  members,
+                  engine,
+                  description,
+                  rating
+                )
+              }
               className="w-full px-2 py-2 mt-2 text-base font-medium transition-all duration-700 bg-orange-400 rounded hover:shadow-2xl"
             >
               Book Now

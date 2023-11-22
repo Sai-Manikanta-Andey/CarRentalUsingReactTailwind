@@ -25,7 +25,7 @@ const carData = [
   {
     id: 1,
     image: astonMartinVirageGoldCar,
-    title: "Aston Martin ",
+    title: "Aston Martin",
     rating: 5,
     rent: "10000",
     engine: "V8",

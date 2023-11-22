@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Booking from "../components/Booking";
-import carData from "../utils/Data";
+
 
 const Bookings = () => {
   const bookings = useSelector((state) => state.Book);
@@ -12,7 +12,7 @@ const Bookings = () => {
       {/* booked cars */}
       <div>
         {bookings.map((car) => (
-          <Booking carData={car} key={carData.id} />
+          <Booking carData={car} key={car.id} />
         ))}
       </div>
     </div>

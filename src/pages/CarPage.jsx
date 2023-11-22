@@ -27,7 +27,6 @@ const CarPage = () => {
     rating
   ) => {
    const CarAlreadyExist = bookings?.filter(car => car?.id === id)
-   console.log(CarAlreadyExist);
    if(CarAlreadyExist.length !==0){
     // notifies already booked
    toast.error("Already Booked !")

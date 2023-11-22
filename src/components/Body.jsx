@@ -13,7 +13,7 @@ const Body = () => {
     setfilteredData(carData)
   },[search])
   
-  console.log(filteredData);
+
   return (
     <div className="max-w-[1100px] mx-auto mb-12 p-4">
       {/* title */}

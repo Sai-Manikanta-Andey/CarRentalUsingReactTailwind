@@ -10,9 +10,9 @@ const Booking = ({ carData }) => {
   const dispatch = useDispatch();
   const handleClick = (id) => {
     dispatch(cancelBooking(id));
-    console.log(id);
+   
   };
-  console.log(carData);
+
   return (
     <div className="w-[290px] flex flex-col sm:block mb-4 gap-4 sm:h-[300px] h-[360px] bg-blue-100   rounded-lg m-auto  hover:shadow-xl md:w-[660px] p-4">
       <div className="flex flex-col mb-2 sm:flex-row">

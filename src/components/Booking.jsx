@@ -5,17 +5,21 @@ import { PiEngineFill } from "react-icons/pi";
 import { PiSteeringWheelFill } from "react-icons/pi";
 import { useDispatch } from "react-redux";
 import { cancelBooking } from "../feature/BookingSlice";
+import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const Booking = ({ carData }) => {
   const dispatch = useDispatch();
+  
   const handleClick = (id) => {
     dispatch(cancelBooking(id));
-   
+    toast.error("Successfully Cancelled");
   };
 
   return (
     <div className="w-[290px] flex flex-col sm:block mb-4 gap-4 sm:h-[300px] h-[360px] bg-blue-100   rounded-lg m-auto  hover:shadow-xl md:w-[660px] p-4">
       <div className="flex flex-col mb-2 sm:flex-row">
+        <Toaster position="top-center" reverseOrder={false} />
         <div className="flex items-center">
           <img
             src={carData?.image}

@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <div className="fixed w-full left-0  top-0 bottom-0 flex justify-between p-4 h-20 bg-white lg:px-12 max-w-[1400px]   z-20 mx-auto  mb-4  ">
+    <header className="max-w-[1400px]  mx-auto relative">
+      <div className="fixed top-0  z-20 flex justify-between w-full h-20 p-4 mx-auto mb-4 bg-white lg:px-12 max-w-[1400px] ">
         {/* LOGO */}
         <div>
           <h2 className="text-2xl font-extrabold text-blue-500"> CARAVALA</h2>

@@ -8,9 +8,6 @@ import { useEffect } from "react";
 const Hero = () => {
 useEffect(() => {
   preloadImage(hero);
-  preloadImage(interior);
-  preloadImage(speedometer);
-  preloadImage(bugattiengine);
 }, []);
   const preloadImage = (src) => {
     const img = new Image();

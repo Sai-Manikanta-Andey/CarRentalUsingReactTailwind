@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="fixed top-0  z-20 flex justify-between w-full h-20 p-4 mx-auto mb-4 bg-white lg:px-12 max-w-[1400px] ">
         {/* LOGO */}
         <div>
-          <h2 className="text-2xl font-extrabold text-blue-500"> CARAVALA</h2>
+          <h2 className="text-2xl font-extrabold text-blue-700"> CARAVALA</h2>
         </div>
         {/*  navbar */}
         <nav className="bg-white">

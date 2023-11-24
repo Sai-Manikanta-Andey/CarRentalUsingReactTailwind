@@ -6,9 +6,9 @@ import bugattiengine from "../assets/bugattiengine.webp";
 import { useEffect } from "react";
 
 const Hero = () => {
-useEffect(() => {
-  preloadImage(hero);
-}, []);
+  useEffect(() => {
+    preloadImage(hero);
+  }, []);
   const preloadImage = (src) => {
     const img = new Image();
     img.src = src;
@@ -21,11 +21,12 @@ useEffect(() => {
       <div className="flex flex-col justify-center text-center lg:text-left">
         <h2 className="text-lg font-semibold text-gray-500 ">Drive a Beast</h2>
         <h2 className="text-5xl font-extrabold uppercase md:text-7xl ">
-          Premium <span className="text-blue-500">cars</span>
+          Premium <span className="text-blue-700">cars</span>
         </h2>
         <div>
           <h4 className="mb-2 text-xl font-semibold md:text-3xl ">
-            Explore the most <span className="text-yellow-400">luxurious</span>
+            Explore the most{" "}
+            <span className="text-yellow-400 ">luxurious </span>
             cars !
           </h4>
         </div>

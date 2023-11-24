@@ -41,8 +41,8 @@ const CarPage = () => {
 
   return (
     <div
-      id="top"
-      className=" pt-20 max-w-[1100px] mx-auto px-4 mb-20 flex f items-center   "
+     
+      className=" pt-20 max-w-[1100px] h-auto mx-auto px-4 mb-20 flex  items-center   "
     >
       <Toaster position="top-center" reverseOrder={false} />
       <div className="grid grid-cols-1 gap-4 p-0 md:grid-cols-2">
